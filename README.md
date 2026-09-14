@@ -23,6 +23,39 @@ DocuMind is *not* "a chatbot for PDFs". It is a document workspace: your files s
 
 ---
 
+## Visual identity — the "colorful research desk"
+
+DocuMind deliberately avoids the black-and-blue AI-app cliché. Its identity is warm, colorful and editorial — a **creative digital library / study workspace**, not a chatbot clone.
+
+**Palette** (light theme)
+
+| Role | Color |
+|---|---|
+| Background | Warm ivory `#FAF5EC` |
+| Primary ink | Deep plum `#4A2545` |
+| Primary actions | Coral `#E8604C` |
+| AI elements | Lavender `#8B6FC7` |
+| Success / ready | Mint `#1E8E7A` |
+| Highlights | Golden yellow `#B98214` |
+| Secondary | Soft pink `#D2548C` |
+
+**Dark theme** is not an inverted grayscale: it uses deep plum `#241B2E` / dark violet `#2E2340` surfaces with the same accents lifted for contrast. Pure black and pure white are avoided in both themes.
+
+**Color as identity**
+
+- Document types carry accents: PDF→coral, Markdown→lavender, DOCX→blue-purple, TXT→mint, CSV/XLSX→gold. Cards stay neutral; icons, badges and accent bars carry the color.
+- Collections get stable identities by name: *University*→lavender, *Research*→mint, *Work*→coral, *Personal*→gold (`CollectionPalette`).
+- AI answers live in soft lavender cards signed "✦ DocuMind"; user messages in warm cream bubbles; source citations are mint pills — `📄 Title · Page 4`.
+- Offline state is calm amber with checkmarks — an intentional mode, not an error.
+
+**Typography** — Fraunces (variable, OFL) for display headings gives a slightly editorial voice; Manrope (variable, OFL) keeps body text highly readable. Both are bundled as assets, so the look never depends on runtime font fetching.
+
+**Decorative system** — small corner blobs, sparkles around AI features, dot scatters in empty states, soft shadows, gradient washes on the home hero. Entrance animations (fade + slide, staggered) are restrained: 220 ms, small offsets.
+
+All of this lives in `core/theme/app_theme.dart` (`DocuMindColors` extension), `core/constants/doc_type_colors.dart` / `collection_palette.dart`, and `features/widgets/` (`decorations.dart`, `motion.dart`, `common.dart`).
+
+---
+
 ## Architecture
 
 ```
