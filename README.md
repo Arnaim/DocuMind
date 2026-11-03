@@ -193,4 +193,4 @@ Linux desktop needs `libsqlite3` (the app auto-switches to `sqflite_common_ffi` 
 - **Contract mode** with the fixed legal disclaimer, per-collection scope presets
 - **Background indexing isolate** for very large imports
 - Optional vector index acceleration if libraries grow beyond tens of thousands of chunks
-# DocuMind
+
